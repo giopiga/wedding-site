@@ -78,7 +78,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: $("#rsvp").offset().top}, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -112,6 +112,8 @@
             }
         }
     });
+
+    lightbox.option({'wrapAround': true});
     
 })(jQuery);
 
